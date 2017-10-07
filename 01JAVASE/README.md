@@ -27,11 +27,18 @@
 
 ## <a name="parte1">Introdução</a>
 
+O Java SE é uma ferramenta completa, incluindo: APIs, compilador e máquina virtual. Neste curso você aprenderá o básico sobre Java SE, considerada uma das plataformas mais conhecidas no mundo e a grande porta de entrada para muitos programadores.
+
 
 [Voltar ao Índice](#indice)
 
 ---
 ## <a name="parte2">Nosso ambiente</a>
+
+Java Development Kit (JDK) significa Kit de Desenvolvimento Java, e é um conjunto de utilitários que permitem criar sistemas de software para a plataforma Java. É composto por compilador e bibliotecas
+
+Link pra download: http://www.oracle.com/technetwork/pt/java/javase/downloads/index.html
+
 
 
 [Voltar ao Índice](#indice)
