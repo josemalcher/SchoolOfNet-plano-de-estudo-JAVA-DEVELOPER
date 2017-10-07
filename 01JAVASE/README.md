@@ -102,6 +102,16 @@ public class HelloWorld {
 ---
 ## <a name="parte5">O que são packages</a>
 
+#### pacotes
+Usamos pacotes para organizar as classes semelhantes. Pacotes, a grosso modo, são apenas pastas ou diretórios do sistema operacional onde ficam armazenados os arquivos fonte de Java e são essenciais para o conceito de encapsulamento, no qual são dados níveis de acesso as classes.
+
+Java posssui um pacote padrão que é utilizado quando programamos, mesmo embora não seja recomendado pela Sun usá-lo.
+
+FONTE: http://www.tiexpert.net/programacao/java/pacotes.php
+
+Mais detalhes: https://www.caelum.com.br/apostila-java-orientacao-objetos/pacotes-organizando-suas-classes-e-bibliotecas/
+
+
 
 [Voltar ao Índice](#indice)
 
