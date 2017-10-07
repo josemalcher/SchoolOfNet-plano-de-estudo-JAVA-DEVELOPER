@@ -135,6 +135,3 @@ fabric.properties
 # See https://github.com/joeblau/gitignore.io/issues/186 and https://github.com/joeblau/gitignore.io/issues/360
 
 .idea/
-
-# End of https://www.gitignore.io/api/git,java,code-java,jetbrains,jetbrains+all
-01JAVASE/src/

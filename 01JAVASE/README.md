@@ -85,6 +85,17 @@ FONTE: https://www.ibm.com/developerworks/br/java/tutorials/j-introtojava1/index
 ---
 ## <a name="parte4">Executando programas Java</a>
 
+```java
+package com.cursoschoolofnet;
+
+public class HelloWorld {
+    //public static void main(String... args) {
+    public static void main(String[] args) {
+        System.out.println("Olá Mundo - Pela School of Net!!");
+    }
+}
+
+```
 
 [Voltar ao Índice](#indice)
 
