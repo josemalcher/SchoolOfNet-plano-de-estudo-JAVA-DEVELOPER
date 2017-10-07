@@ -118,6 +118,63 @@ Mais detalhes: https://www.caelum.com.br/apostila-java-orientacao-objetos/pacote
 ---
 ## <a name="parte6">O que são classes</a>
 
+As classes de programação são receitas de um objeto, aonde têm características e comportamentos, permitindo assim armazenar propriedades e métodos dentro dela. Para construir uma classe é preciso utilizar o pilar da abstração. Uma classe geralmente representa um substantivo, por exemplo: uma pessoa, um lugar, algo que seja “abstrato”.
+
+Uma classe é um tipo definido pelo usuário que contém a “receita”, a especificação para os objetos, algo mais ou menos como o tipo inteiro contém o molde para as variáveis declaradas como inteiros. A classe envolve, associa, funções e dados, controlando o acesso a estes, defini-la implica em especificar os seus atributos (dados) e seus métodos (funções).
+
+Um programa que utiliza uma interface controladora de um motor elétrico provavelmente definiria a classe motor. Os atributos desta classe seriam: temperatura, velocidade, tensão aplicada. Estes provavelmente seriam representados na classe por tipos como int ou float. Os métodos desta classe seriam funções para alterar a velocidade, ler a temperatura, etc.
+
+* Toda classe possui um nome;
+* Possuem visibilidade, exemplo: public, private, protected;
+* Possuem membros como: Características e Ações;
+* Para criar uma classe basta declarar a visibilidade + digitar a palavra reservada class + NomeDaClasse + abrir e fechar chaves { }.
+  
+
+```java
+package com.cursoschoolofnet;
+
+public class Person {
+    public String colorHair;
+    public String eyeColor;
+    public Float height;
+
+    public Person(String black, float v, String blue){
+        System.out.println("Executando COntrutor!");
+    }
+
+    public Person(String colorHair, String eyeColor, Float height) {
+        this.colorHair = colorHair;
+        this.eyeColor = eyeColor;
+        this.height = height;
+    }
+
+    public void walk(){
+        System.out.println("Eu estou andando....");
+    }
+}
+
+```
+
+```java
+package com.cursoschoolofnet.main;
+
+import com.cursoschoolofnet.Person;
+
+public class PersonTest {
+    public static void main(String[] args) {
+
+        System.out.println("Olá, bem vindo!");
+
+        Person aluno = new Person("Black", (float)1.70, "blue");
+        aluno.walk();
+
+    }
+}
+
+```
+
+Leitura da apostila Caelum: https://www.caelum.com.br/apostila-java-orientacao-objetos/orientacao-a-objetos-basica/
+
 
 [Voltar ao Índice](#indice)
 
