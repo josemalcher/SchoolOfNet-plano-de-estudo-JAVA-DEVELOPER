@@ -179,7 +179,7 @@ Leitura da apostila Caelum: https://www.caelum.com.br/apostila-java-orientacao-o
 [Voltar ao Índice](#indice)
 
 ---
-## <a name="parte7">Principais classes</a>
+## <a name="parte07">Principais classes</a>
 
 [Wrappers em Java: Aprenda como utilizar](http://www.devmedia.com.br/wrappers-em-java-aprenda-como-utilizar/30275)
 
@@ -188,15 +188,31 @@ Leitura da apostila Caelum: https://www.caelum.com.br/apostila-java-orientacao-o
 [Voltar ao Índice](#indice)
 
 ---
-## <a name="parte8">Tipos primitivos</a>
+## <a name="parte08">Tipos primitivos</a>
+
+[3.2 - Tipos primitivos e valores](https://www.caelum.com.br/apostila-java-orientacao-objetos/variaveis-primitivas-e-controle-de-fluxo/#3-2-tipos-primitivos-e-valores)
 
 
 
 [Voltar ao Índice](#indice)
 
 ---
-## <a name="parte9">Operadores</a>
+## <a name="parte09">Operadores</a>
 
+[Operadores lógicos e matemáticos da linguagem Java](http://www.devmedia.com.br/operadores-logicos-e-matematicos-da-linguagem-java/25248)
+
+```java
+public class AvaliaPrecedencia {
+
+	public static void main(String[] args) {
+		int a = 30;
+		int b = 5;
+		int c = 10;
+		int total = (a + b + c) / 10;		
+		System.out.println("O resultado = "+total);
+	}
+}
+```
 
 [Voltar ao Índice](#indice)
 
