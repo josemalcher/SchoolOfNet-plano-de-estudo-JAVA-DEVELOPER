@@ -181,11 +181,15 @@ Leitura da apostila Caelum: https://www.caelum.com.br/apostila-java-orientacao-o
 ---
 ## <a name="parte7">Principais classes</a>
 
+[Wrappers em Java: Aprenda como utilizar](http://www.devmedia.com.br/wrappers-em-java-aprenda-como-utilizar/30275)
+
+[diferença entre primitivo e wrapper classes?](http://www.guj.com.br/t/diferenca-entre-primitivo-e-wrapper-classes/211354)
 
 [Voltar ao Índice](#indice)
 
 ---
 ## <a name="parte8">Tipos primitivos</a>
+
 
 
 [Voltar ao Índice](#indice)
