@@ -342,6 +342,12 @@ public class Calculadora {
 ---
 ## <a name="parte12">Debug</a>
 
+O que é debugar
+Debugging (em português, depuração ou depurar) é um processo de reduzir ou encontrar bugs no seu sistema. De uma forma geral, debugging não é uma tarefa fácil de ser executada. Muitas variações podem atrapalhar esse processo, por exemplo, a linguagem que estamos utilizando e ferramentas disponíveis para fazermos debugging de um código.
+
+O Java em si facilita muito neste processo, pois nos fornece maneiras de sabermos se o código está errado, por exemplo as exceptions. Em linguagens de baixo nível saber onde o bug estava era extremamente complicado. O que também facilita nosso trabalho são as ferramentas de debug. Veremos que elas são necessárias nos casos que nossos testes de unidade de logging não foram suficientes para encontrar a razão de um problema.
+
+FONTE: https://www.caelum.com.br/apostila-java-orientacao-objetos/apendice-debugging/#22-1-o-que-e-debugar
 
 [Voltar ao Índice](#indice)
 
