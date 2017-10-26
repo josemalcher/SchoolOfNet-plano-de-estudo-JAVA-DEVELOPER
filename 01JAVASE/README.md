@@ -270,6 +270,21 @@ public class IfSwitch {
 ---
 ## <a name="parte11">Lendo dados dos Usuário</a>
 
+```java
+import java.util.Scanner;
+
+public class LendoDadosUsuario {
+    public static void main(String[] args) {
+        Scanner leitor  = new Scanner(System.in);
+
+        System.out.println("QUal seu nome?");
+        String nome = leitor.nextLine();
+
+        System.out.println("Meu nome é "+ nome);
+    }
+}
+```
+
 
 [Voltar ao Índice](#indice)
 
