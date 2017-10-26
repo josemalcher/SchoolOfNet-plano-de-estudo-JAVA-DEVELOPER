@@ -354,11 +354,42 @@ FONTE: https://www.caelum.com.br/apostila-java-orientacao-objetos/apendice-debug
 ---
 ## <a name="parte13">Array List</a>
 
+Em DEITEL (2005, pág. 673), uma coleção é uma estrutura de dados, na realidade um objeto, que pode armazenar ou agrupar referências a outros objetos (um contêiner). As classes e interfaces da estrutura de coleções são membros do pacote java.util e a Figura 1 apresenta a hierarquia de algumas destas interfaces oferecidas pelo Java.
+
+http://www.devmedia.com.br/explorando-a-classe-arraylist-no-java/24298
+
+```java
+import java.util.ArrayList;
+import java.util.List;
+
+public class ArraysList {
+    public static void main(String[] args) {
+
+        int[] idades = new int[1000];
+        idades[0] = 10;
+        idades[1] = 12;
+        idades[2] = 15;
+
+        List<Integer> idadesList = new ArrayList<>();
+        idadesList.add(10);
+        idadesList.add(20);
+        idadesList.add(15);
+
+        //idadesList.remove(idadesList.indexOf(20));
+
+        for(Integer idade : idadesList){
+            System.out.println(idade);
+        }
+    }
+}
+
+```
 
 [Voltar ao Índice](#indice)
 
 ---
-## <a name="parte14">op for while do while</a>
+## <a name="parte14">lop for while do while</a>
+
 
 
 [Voltar ao Índice](#indice)
