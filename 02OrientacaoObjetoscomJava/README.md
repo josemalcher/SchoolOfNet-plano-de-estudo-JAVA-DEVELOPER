@@ -72,7 +72,6 @@ https://www.caelum.com.br/apostila-java-orientacao-objetos/orientacao-a-objetos-
 https://www.caelum.com.br/apostila-java-orientacao-objetos/orientacao-a-objetos-basica/#4-3-uma-classe-em-java
 
 
-
 [Voltar ao Índice](#indice)
 
 ---
@@ -85,12 +84,39 @@ Fórun: http://www.guj.com.br/t/java-e-totalmente-orientado-a-objetos/54223/10
 [Voltar ao Índice](#indice)
 
 ---
-## <a name="parte7"></a>
+## <a name="parte7">Atributos</a>
+
+https://www.caelum.com.br/apostila-java-orientacao-objetos/orientacao-a-objetos-basica/#4-9-continuando-com-atributos
+
+
+```java
+public class Pessoa {
+    public String nome;
+    public Integer idade;
+    public String endereco;
+}
+
+```
+
+```java
+public class PessoaTest {
+    public static void main(String[] args) {
+        Pessoa pessoa01 = new Pessoa();
+        pessoa01.nome = "JOSE";
+        pessoa01.idade = 33;
+
+        System.out.println("NOME: "+ pessoa01.nome);
+    }
+}
+
+```
 
 [Voltar ao Índice](#indice)
 
 ---
-## <a name="parte8"></a>
+## <a name="parte8">Métodos</a>
+
+
 
 [Voltar ao Índice](#indice)
 
