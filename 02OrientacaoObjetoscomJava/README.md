@@ -67,7 +67,11 @@ https://www.caelum.com.br/apostila-java-orientacao-objetos/orientacao-a-objetos-
 [Voltar ao Índice](#indice)
 
 ---
-## <a name="parte5"></a>
+## <a name="parte5">Classes</a>
+
+https://www.caelum.com.br/apostila-java-orientacao-objetos/orientacao-a-objetos-basica/#4-3-uma-classe-em-java
+
+
 
 [Voltar ao Índice](#indice)
 
