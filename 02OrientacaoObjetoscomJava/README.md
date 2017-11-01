@@ -116,7 +116,29 @@ public class PessoaTest {
 ---
 ## <a name="parte8">Métodos</a>
 
+https://www.caelum.com.br/apostila-java-orientacao-objetos/orientacao-a-objetos-basica/#4-5-metodos
 
+```java
+
+public class Metodos {
+    public String frase = "Dentro de um método";
+
+    public void metodoFrase(){
+        System.out.println(this.frase);
+    }
+
+}
+
+```
+```java
+public class MetodosTeste {
+    public static void main(String[] args) {
+        Metodos metodo01 = new Metodos();
+        metodo01.metodoFrase();
+    }
+}
+
+```
 
 [Voltar ao Índice](#indice)
 
