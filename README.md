@@ -2,7 +2,7 @@
 
 [Java Developer - https://www.schoolofnet.com/plano-de-estudo-java-developer/](https://www.schoolofnet.com/plano-de-estudo-java-developer/)
 
-[0 - JAVA SE](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-JAVA-DEVELOPER/tree/master/01JAVASE)  | :okay:   
+[0 - JAVA SE](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-JAVA-DEVELOPER/tree/master/01JAVASE)  | :ok_hand:         
 [1 - Orientação a Objetos com Java](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-JAVA-DEVELOPER/tree/master/02OrientacaoObjetoscomJava)    | :eyes:       
 2 - Iniciando com JSP     
 3 - Api's Nativas no Java    
