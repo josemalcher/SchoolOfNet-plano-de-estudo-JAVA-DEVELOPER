@@ -143,7 +143,66 @@ public class MetodosTeste {
 [Voltar ao Índice](#indice)
 
 ---
-## <a name="parte0"></a>
+## <a name="parte9">Métodos estáticos</a>
+
+https://www.caelum.com.br/apostila-java-orientacao-objetos/modificadores-de-acesso-e-atributos-de-classe/#6-6-atributos-de-classe
+
+```java
+public class MetodoEstatico {
+
+    private static Integer valorFixo = 10;
+    private Integer valorVariavel;
+
+    public static Integer getValorFixo() {
+        return valorFixo;
+    }
+
+    public static void setValorFixo(Integer valorFixo) {
+        MetodoEstatico.valorFixo = valorFixo; // <<<<<---------------
+    }
+
+    public Integer getValorVariavel() {
+        return valorVariavel;
+    }
+
+    public void setValorVariavel(Integer valorVariavel) {
+        this.valorVariavel = valorVariavel; // <<<<<---------------
+    }
+
+    //método statico
+
+    public void imprimeValores(){
+        System.out.println("Valor Fixo = " + valorFixo);
+        System.out.println("Valor Variável = "+ valorVariavel);
+    }
+    public static void imprimeMetodoEstatico(){
+        System.out.println("Dentro do método statico");
+        System.out.println("Valor Fixo = " + valorFixo);
+        //System.out.println("Valor Variável = "+ valorVariavel); // não compila
+    }
+}
+
+```
+```java
+public class MetodoEstaticoTeste {
+    public static void main(String[] args) {
+
+        MetodoEstatico metodo01 = new MetodoEstatico();
+        metodo01.setValorVariavel(55);
+        metodo01.imprimeValores();
+        
+        System.out.println("---------------");
+        MetodoEstatico.setValorFixo(222); // alterando valor fixo
+        System.out.println(MetodoEstatico.getValorFixo());
+        MetodoEstatico.imprimeMetodoEstatico();
+
+        System.out.println("---------------");
+        metodo01.imprimeValores(); // <<<<------
+
+    }
+}
+
+```
 
 [Voltar ao Índice](#indice)
 
