@@ -76,7 +76,11 @@ https://www.caelum.com.br/apostila-java-orientacao-objetos/orientacao-a-objetos-
 [Voltar ao Índice](#indice)
 
 ---
-## <a name="parte6"></a>
+## <a name="parte6">Totalmente OO?</a>
+
+Fórun: http://www.guj.com.br/t/java-e-totalmente-orientado-a-objetos/54223/10
+
+
 
 [Voltar ao Índice](#indice)
 
