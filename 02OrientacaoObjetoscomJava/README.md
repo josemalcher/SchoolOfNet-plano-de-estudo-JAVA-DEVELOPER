@@ -207,7 +207,81 @@ public class MetodoEstaticoTeste {
 [Voltar ao Índice](#indice)
 
 ---
-## <a name="parte10"></a>
+## <a name="parte10">Construtores</a>
+
+https://www.caelum.com.br/apostila-java-orientacao-objetos/modificadores-de-acesso-e-atributos-de-classe/#6-4-construtores
+
+```java
+public class Construtores {
+    private int numero;
+    private double saldo;
+    private double limite;
+
+    public Construtores(int numero, double saldo, double limite) {
+        this.numero = numero;
+        this.saldo = saldo;
+        this.limite = limite;
+    }
+
+    public Construtores() {
+    }
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+
+    public double getLimite() {
+        return limite;
+    }
+
+    public void setLimite(double limite) {
+        this.limite = limite;
+    }
+    public void imprime(){
+        System.out.println("NUMERO: " + this.numero);
+        System.out.println("Saldo: " + this.saldo);
+        System.out.println("Limite: " + this.limite);
+    }
+}
+
+```
+
+```java
+public class ConstrutoresTeste {
+    public static void main(String[] args) {
+
+        Construtores c01 = new Construtores();
+
+        Construtores c02 = new Construtores(123,100.88,123.456);
+
+        c01.imprime();
+        c02.imprime();
+
+       /*
+        NUMERO: 0
+        Saldo: 0.0
+        Limite: 0.0
+        NUMERO: 123
+        Saldo: 100.88
+        Limite: 123.456
+       */
+
+    }
+}
+
+```
 
 [Voltar ao Índice](#indice)
 
