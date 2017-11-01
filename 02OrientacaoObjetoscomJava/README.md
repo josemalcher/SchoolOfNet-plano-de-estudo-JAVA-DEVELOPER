@@ -363,7 +363,81 @@ public class EncapsulamentoTeste {
 [Voltar ao Índice](#indice)
 
 ---
-## <a name="parte12"></a>
+## <a name="parte12">Herança</a>
+
+https://www.caelum.com.br/apostila-java-orientacao-objetos/heranca-reescrita-e-polimorfismo/
+
+```java
+public class HerancaVeiculo {
+    private String cor;
+    private Double VelocidadeMaxima;
+
+    public HerancaVeiculo(String cor, Double velocidadeMaxima) {
+        this.cor = cor;
+        VelocidadeMaxima = velocidadeMaxima;
+    }
+
+    public HerancaVeiculo() {
+    }
+
+    public String getCor() {
+        return cor;
+    }
+
+    public void setCor(String cor) {
+        this.cor = cor;
+    }
+
+    public Double getVelocidadeMaxima() {
+        return VelocidadeMaxima;
+    }
+
+    public void setVelocidadeMaxima(Double velocidadeMaxima) {
+        VelocidadeMaxima = velocidadeMaxima;
+    }
+}
+
+```
+```java
+public class HerancaVeiculoCarro extends HerancaVeiculo{
+    private Integer machas;
+
+    public HerancaVeiculoCarro(String cor, Double velocidadeMaxima, Integer machas) {
+        super(cor, velocidadeMaxima);
+        this.machas = machas;
+    }
+
+    public HerancaVeiculoCarro() {
+        super();
+    }
+
+    public HerancaVeiculoCarro(Integer machas) {
+        this.machas = machas;
+    }
+
+    public Integer getMachas() {
+        return machas;
+    }
+
+    public void setMachas(Integer machas) {
+        this.machas = machas;
+    }
+}
+
+```
+```java
+public class HerancaTeste {
+    public static void main(String[] args) {
+        HerancaVeiculoCarro carro01 = new HerancaVeiculoCarro();
+
+        carro01.setCor("Preta");
+        carro01.setMachas(6);
+        carro01.setVelocidadeMaxima(300.0);
+
+    }
+}
+
+```
 
 [Voltar ao Índice](#indice)
 
