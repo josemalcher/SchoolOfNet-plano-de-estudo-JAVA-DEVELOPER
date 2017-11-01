@@ -58,7 +58,11 @@ https://www.caelum.com.br/apostila-java-orientacao-objetos/orientacao-a-objetos-
 [Voltar ao Índice](#indice)
 
 ---
-## <a name="parte4"></a>
+## <a name="parte4">Criando seu projeto</a>
+
+[Dicas e truques de IntelliJ IDEA para quem está começando](http://blog.alura.com.br/dicas-e-truques-de-intellij-idea-para-quem-esta-comecando/)
+
+
 
 [Voltar ao Índice](#indice)
 
