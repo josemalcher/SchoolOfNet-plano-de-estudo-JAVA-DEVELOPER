@@ -29,8 +29,9 @@
 
 ## <a name="parte1">Introdução</a>
 
-O Java SE é uma ferramenta completa, incluindo: APIs, compilador e máquina virtual. Neste curso você aprenderá o básico sobre Java SE, considerada uma das plataformas mais conhecidas no mundo e a grande porta de entrada para muitos programadores.
+Orientação a objetos é uma maneira de programar que ajuda na organização e resolve muitos problemas enfrentados pela programação procedural.
 
+https://www.caelum.com.br/apostila-java-orientacao-objetos/orientacao-a-objetos-basica/
 
 [Voltar ao Índice](#indice)
 
@@ -44,7 +45,15 @@ Link pra download: http://www.oracle.com/technetwork/pt/java/javase/downloads/in
 [Voltar ao Índice](#indice)
 
 ---
-## <a name="parte3"></a>
+## <a name="parte3">OOP</a>
+
+Orientação a objetos vai te ajudar em muito em se organizar e escrever menos, além de concentrar as responsabilidades nos pontos certos, flexibilizando sua aplicação, encapsulando a lógica de negócios.
+
+Outra enorme vantagem, onde você realmente vai economizar montanhas de código, é o polimorfismo das referências, que veremos em um posterior capítulo.
+
+https://www.caelum.com.br/apostila-java-orientacao-objetos/orientacao-a-objetos-basica/#4-1-motivacao-problemas-do-paradigma-procedural
+
+
 
 [Voltar ao Índice](#indice)
 
