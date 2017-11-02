@@ -370,11 +370,11 @@ https://www.caelum.com.br/apostila-java-orientacao-objetos/heranca-reescrita-e-p
 ```java
 public class HerancaVeiculo {
     private String cor;
-    private Double VelocidadeMaxima;
+    private Double velocidadeMaxima;
 
     public HerancaVeiculo(String cor, Double velocidadeMaxima) {
         this.cor = cor;
-        VelocidadeMaxima = velocidadeMaxima;
+        this.velocidadeMaxima = velocidadeMaxima;
     }
 
     public HerancaVeiculo() {
@@ -389,11 +389,11 @@ public class HerancaVeiculo {
     }
 
     public Double getVelocidadeMaxima() {
-        return VelocidadeMaxima;
+        return velocidadeMaxima;
     }
 
     public void setVelocidadeMaxima(Double velocidadeMaxima) {
-        VelocidadeMaxima = velocidadeMaxima;
+        this.velocidadeMaxima = velocidadeMaxima;
     }
 }
 
@@ -489,6 +489,10 @@ public class ComposicaoCarroTeste {
 
 ---
 ## <a name="parte14">Polimorfismo</a>
+
+https://www.caelum.com.br/apostila-java-orientacao-objetos/heranca-reescrita-e-polimorfismo/#7-4-polimorfismo
+
+
 
 [Voltar ao Índice](#indice)
 
