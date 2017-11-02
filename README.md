@@ -3,20 +3,19 @@
 [Java Developer - https://www.schoolofnet.com/plano-de-estudo-java-developer/](https://www.schoolofnet.com/plano-de-estudo-java-developer/)
 
 [0 - JAVA SE](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-JAVA-DEVELOPER/tree/master/01JAVASE)  | :ok_hand:         
-[1 - Orientação a Objetos com Java](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-JAVA-DEVELOPER/tree/master/02OrientacaoObjetoscomJava)    | :eyes:       
-2 - Iniciando com JSP     
-3 - Api's Nativas no Java    
-4 - Iniciando com JSP    
-5 - Java 8   
-6 - Java com JDBC  
-7 - Iniciando com Spark Java Framework  
-8 - Jersey Java 
-9 - Java com MongoDB  
-10 - Hibernate  
-11 - Java CDI  
-12 - Play Framework  
-13 - jUnit Java 
-14 - Apache POI - Crie documentos Microsoft com Java    
+[1 - Orientação a Objetos com Java](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-JAVA-DEVELOPER/tree/master/02OrientacaoObjetoscomJava)  | :ok_hand:             
+[2 - Api's Nativas no Java](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-JAVA-DEVELOPER/tree/master/03ApisNativasnoJava)         | :eyes:   
+3 - Iniciando com JSP    
+4 - Java 8   
+5 - Java com JDBC  
+6 - Iniciando com Spark Java Framework  
+7 - Jersey Java 
+8 - Java com MongoDB  
+9 - Hibernate  
+10 - Java CDI  
+11 - Play Framework  
+12 - jUnit Java 
+13 - Apache POI - Crie documentos Microsoft com Java    
 
 ---
 
