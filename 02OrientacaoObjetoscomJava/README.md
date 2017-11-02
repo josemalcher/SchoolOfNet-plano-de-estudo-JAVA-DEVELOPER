@@ -591,10 +591,38 @@ public class PoliPessoaTeste {
 ---
 ## <a name="parte15">Interfaces</a>
 
+https://www.caelum.com.br/apostila-java-orientacao-objetos/interfaces/
+
+```java
+public interface IPessoa {
+    public void metodoInterface01();
+    void metodoInterface02();
+}
+
+```
+```java
+public class InterfPessoa implements IPessoa {
+    @Override
+    public void metodoInterface01() {
+
+    }
+
+    @Override
+    public void metodoInterface02() {
+
+    }
+}
+
+```
+
 [Voltar ao Índice](#indice)
 
 ---
 ## <a name="parte16">Classes Abstratas</a>
+
+https://www.caelum.com.br/apostila-java-orientacao-objetos/classes-abstratas/
+
+
 
 [Voltar ao Índice](#indice)
 
