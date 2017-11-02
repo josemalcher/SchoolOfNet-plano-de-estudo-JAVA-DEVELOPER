@@ -442,27 +442,68 @@ public class HerancaTeste {
 [Voltar ao Índice](#indice)
 
 ---
-## <a name="parte13"></a>
+## <a name="parte13">Composições</a>
+
+https://www.caelum.com.br/apostila-java-orientacao-objetos/heranca-reescrita-e-polimorfismo/#7-6-um-pouco-mais
+
+```java
+public class ComposicaoCarro {
+
+    private HerancaVeiculo veiculo01= new HerancaVeiculo();
+
+    public ComposicaoCarro(HerancaVeiculo veiculo01) {
+        this.veiculo01 = veiculo01;
+    }
+
+    public ComposicaoCarro() {
+    }
+
+    public HerancaVeiculo getVeiculo01() {
+        return veiculo01;
+    }
+
+    public void setVeiculo01(HerancaVeiculo veiculo01) {
+        this.veiculo01 = veiculo01;
+    }
+}
+
+```
+
+```java
+public class ComposicaoCarroTeste {
+    public static void main(String[] args) {
+
+        ComposicaoCarro carroModelo = new ComposicaoCarro();
+        carroModelo.getVeiculo01().setCor("AZUL");
+        carroModelo.getVeiculo01().setVelocidadeMaxima(300.00);
+
+        System.out.println("COR " + carroModelo.getVeiculo01().getCor());
+        System.out.println("Velocidade Máxima " + carroModelo.getVeiculo01().getVelocidadeMaxima());
+
+    }
+}
+
+```
 
 [Voltar ao Índice](#indice)
 
 ---
-## <a name="parte14"></a>
+## <a name="parte14">Polimorfismo</a>
 
 [Voltar ao Índice](#indice)
 
 ---
-## <a name="parte15"></a>
+## <a name="parte15">Interfaces</a>
 
 [Voltar ao Índice](#indice)
 
 ---
-## <a name="parte16"></a>
+## <a name="parte16">Classes Abstratas</a>
 
 [Voltar ao Índice](#indice)
 
 ---
-## <a name="parte17"></a>
+## <a name="parte17">Finalizando</a>
 
 [Voltar ao Índice](#indice)
 
