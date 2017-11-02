@@ -492,7 +492,99 @@ public class ComposicaoCarroTeste {
 
 https://www.caelum.com.br/apostila-java-orientacao-objetos/heranca-reescrita-e-polimorfismo/#7-4-polimorfismo
 
+```java
+public class PoliPessoa {
+    private String nome;
+    private Integer idade;
+    private String veiculo;
 
+    public PoliPessoa(String nome, Integer idade, String veiculo) {
+        this.nome = nome;
+        this.idade = idade;
+        this.veiculo = veiculo;
+    }
+
+    public PoliPessoa(String nome, Integer idade) {
+        this.nome = nome;
+        this.idade = idade;
+    }
+
+    public PoliPessoa() {
+    }
+
+    public String getNome() {
+        return this.nome;
+    }
+
+    public String getNome(String apelido) { //  <<<<-------------------
+        return "Nome é " + this.nome + " Apelido " + apelido;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public Integer getIdade() {
+        return idade;
+    }
+
+    public void setIdade(Integer idade) {
+        this.idade = idade;
+    }
+
+    public String getVeiculo() {
+        return veiculo;
+    }
+
+    public void setVeiculo(String veiculo) {
+        this.veiculo = veiculo;
+    }
+
+    public void metodoSobreescrito(){
+        System.out.println("TESTE Método sobreescrito - PAI");
+    }
+
+
+}
+
+```
+```java
+public class PoliPessoaCrianca extends PoliPessoa {
+
+    public PoliPessoaCrianca(String nome, Integer idade) {
+        super(nome, idade);
+    }
+
+    @Override
+    public void metodoSobreescrito() {
+        //super.metodoSobreescrito();
+        System.out.println("Método dentro do FILHO");
+    }
+}
+
+```
+```java
+public class PoliPessoaTeste {
+    public static void main(String[] args) {
+
+        PoliPessoa pessoa = new PoliPessoa("Jose Malcher", 33, "Moto");
+
+        System.out.println(pessoa.getNome());
+        System.out.println(pessoa.getNome("Avenida "));
+        pessoa.metodoSobreescrito();
+        System.out.println("-----------------------------------------------------------------");
+
+        PoliPessoaCrianca crianca = new PoliPessoaCrianca("Maria", 05);
+        System.out.println(crianca.getNome());
+        System.out.println(crianca.getNome("Mariazinha"));
+        crianca.metodoSobreescrito();
+
+
+    }
+
+}
+
+```
 
 [Voltar ao Índice](#indice)
 
