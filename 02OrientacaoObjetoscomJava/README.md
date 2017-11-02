@@ -622,12 +622,28 @@ public class InterfPessoa implements IPessoa {
 
 https://www.caelum.com.br/apostila-java-orientacao-objetos/classes-abstratas/
 
+```java
+public abstract class AbstAnimal {
+    public abstract void abstRosnar();
+}
 
+```
+```java
+public class AbstCachorro extends AbstAnimal {
+    @Override
+    public void abstRosnar() {
+        System.out.println("Latir!!");
+    }
+}
+
+```
 
 [Voltar ao Índice](#indice)
 
 ---
 ## <a name="parte17">Finalizando</a>
+
+
 
 [Voltar ao Índice](#indice)
 
