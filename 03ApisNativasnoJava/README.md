@@ -1,6 +1,6 @@
 # Api's Nativas no Java
 
-[JAVA SE](https://www.schoolofnet.com/curso-apis-nativa-no-java/)
+[ Link curso - Api's Nativas no Java](https://www.schoolofnet.com/curso-apis-nativa-no-java/)
 
 
 Todos sabem que a Linguagem Java é uma das mais utilizadas e completas do mundo. Ela possui uma infinidade de pacotes e API's prontas para nos auxiliar na resolução de problemas do dia a dia. Neste curso aprenderemos a utilizar as principais API's que o Java nos provê.  
@@ -103,7 +103,49 @@ public class App
 ---
 ## <a name="parte5">Modificadores de acesso public e private</a>
 
+```java
+package com.schoolofnet.javaNative;
 
+import com.schoolofnet.javaNative.private_code.PrivateCode;
+import com.schoolofnet.javaNative.public_code.PublicCode;
+
+public class App {
+	public static void main(String[] args) {
+		new PublicCode();
+		new PrivateCode();
+	}
+}
+```
+
+```java
+package com.schoolofnet.javaNative.public_code;
+
+public class PublicCode {
+
+	public PublicCode() {
+		System.out.println("Publico");
+	}
+	public void publicoMetodo() {
+		System.out.println("Método publicio");
+	}
+}
+
+```
+
+```java
+package com.schoolofnet.javaNative.private_code;
+
+public class PrivateCode {
+	public PrivateCode() {
+		System.out.println("Public método em PrivateCode");
+		metodoPrivado();
+	}
+	private void metodoPrivado() {
+		System.out.println("Privado método (método privado)");
+	}
+}
+
+```
 
 [Voltar ao Índice](#indice)
 
