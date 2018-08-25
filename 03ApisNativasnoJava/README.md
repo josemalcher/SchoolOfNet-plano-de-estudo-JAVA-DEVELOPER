@@ -59,7 +59,24 @@ OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
 ---
 ## <a name="parte3">Criando nosso projeto</a>
 
+- Projeto Maven
 
+```
+package com.schoolofnet.javaNative;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        System.out.println( "Hello World!" );
+    }
+}
+
+```
 
 [Voltar ao Índice](#indice)
 
