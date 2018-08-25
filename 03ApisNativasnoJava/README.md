@@ -61,7 +61,7 @@ OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
 
 - Projeto Maven
 
-```
+```java
 package com.schoolofnet.javaNative;
 
 /**
@@ -83,7 +83,20 @@ public class App
 ---
 ## <a name="parte4">Packages</a>
 
+```java
+package com.schoolofnet.javaNative;
 
+import com.schoolofnet.javaNative.main.*;
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+        new Main();
+    }
+}
+
+```
 
 [Voltar ao Índice](#indice)
 

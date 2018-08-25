@@ -1,13 +1,11 @@
 package com.schoolofnet.javaNative;
 
-/**
- * Hello world!
- *
- */
+import com.schoolofnet.javaNative.main.*;
+
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        new Main();
     }
 }
