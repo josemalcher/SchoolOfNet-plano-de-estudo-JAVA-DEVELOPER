@@ -37,7 +37,22 @@ Todos sabem que a Linguagem Java é uma das mais utilizadas e completas do mundo
 ---
 ## <a name="parte2">Nosso ambiente</a>
 
+```
+C:\Users\josemalcher>javac -version
+javac 1.8.0_161
 
+C:\Users\josemalcher>java -version
+java version "10.0.2" 2018-07-17
+Java(TM) SE Runtime Environment 18.3 (build 10.0.2+13)
+Java HotSpot(TM) 64-Bit Server VM 18.3 (build 10.0.2+13, mixed mode)
+
+C:\Users\josemalcher>mvn -version
+Apache Maven 3.5.4 (1edded0938998edf8bf061f1ceb3cfdeccf443fe; 2018-06-17T15:33:14-03:00)
+Maven home: C:\Program Files\apache\bin\..
+Java version: 1.8.0_161, vendor: Oracle Corporation, runtime: C:\Program Files\Java\jdk1.8.0_161\jre
+Default locale: pt_BR, platform encoding: Cp1252
+OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
+```
 
 [Voltar ao Índice](#indice)
 
