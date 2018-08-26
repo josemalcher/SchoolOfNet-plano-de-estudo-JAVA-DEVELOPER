@@ -267,7 +267,6 @@ public class App {
 ## <a name="parte8">Java lang - Classes Wrappers</a>
 
 
-```
 Wrappers vem do verbo inglês “wrap” que significa envolver. Eles são um nome adicional ao padrão de projeto Decorator. Tem como principal função “envolver coisas” adicionando funcionalidades à ela.
 
 O Java conta com diversos Wrappers que adicionam funcionalidades a outras classes ou tipos primitivos, um exemplo dele é o Integer, que é o Wrapper do tipo primitivo int. Que tipo de funcionalidade você pode executar tendo apenas uma variável definida como “int”? Nenhuma, a não ser atribuir valores, pois int é um tipo primitivo e não possuí métodos.
@@ -275,7 +274,7 @@ O Java conta com diversos Wrappers que adicionam funcionalidades a outras classe
 Com o Wrapper Integer envolvendo o tipo primitivo int você consegue executar métodos como é o caso do: parseInt, valueOf e assim por diante.
 
 FONTE: https://www.devmedia.com.br/introducao-aos-wrappers-em-java/28605
-```
+
 
 ```java
 package com.schoolofnet.javaNative;
@@ -296,6 +295,69 @@ public class App {
 ---
 ## <a name="parte9">Java lang - Anotations</a>
 
+https://www.devmedia.com.br/entendendo-anotacoes-em-java/26772
+
+https://www.devmedia.com.br/como-criar-anotacoes-em-java/32461
+
+```java
+package com.schoolofnet.javaNative;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.TYPE)
+public @interface Info {
+	String createBy() default "José Malcher ";	
+}
+
+```
+
+```java
+package com.schoolofnet.javaNative.public_code;
+
+import com.schoolofnet.javaNative.Info;
+
+//@Info(createBy = "Malcher Jr.")
+@Info
+public class PublicCode {
+
+	public PublicCode() {
+		System.out.println("Publico");
+	}
+	public void publicoMetodo() {
+		System.out.println("Método publicio");
+	}
+	
+	@Override
+	public String toString() {
+		return "Public_code class to String";
+	}
+
+}
+
+```
+
+```java
+package com.schoolofnet.javaNative;
+
+import com.schoolofnet.javaNative.public_code.PublicCode;
+import com.sun.xml.internal.bind.v2.schemagen.xmlschema.Annotation;
+
+public class App {
+	public static void main(String[] args) {
+		Class<PublicCode> obj = PublicCode.class;
+		if(obj.isAnnotationPresent(Info.class)) {
+			Info annotation = obj.getAnnotation(Info.class);
+			Info info = (Info) annotation;
+			System.out.println(info.createBy());
+		}
+	}
+}
+
+```
 
 
 [Voltar ao Índice](#indice)
