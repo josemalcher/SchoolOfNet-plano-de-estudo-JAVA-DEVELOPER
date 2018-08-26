@@ -267,6 +267,29 @@ public class App {
 ## <a name="parte8">Java lang - Classes Wrappers</a>
 
 
+```
+Wrappers vem do verbo inglês “wrap” que significa envolver. Eles são um nome adicional ao padrão de projeto Decorator. Tem como principal função “envolver coisas” adicionando funcionalidades à ela.
+
+O Java conta com diversos Wrappers que adicionam funcionalidades a outras classes ou tipos primitivos, um exemplo dele é o Integer, que é o Wrapper do tipo primitivo int. Que tipo de funcionalidade você pode executar tendo apenas uma variável definida como “int”? Nenhuma, a não ser atribuir valores, pois int é um tipo primitivo e não possuí métodos.
+
+Com o Wrapper Integer envolvendo o tipo primitivo int você consegue executar métodos como é o caso do: parseInt, valueOf e assim por diante.
+
+FONTE: https://www.devmedia.com.br/introducao-aos-wrappers-em-java/28605
+```
+
+```java
+package com.schoolofnet.javaNative;
+public class App {
+	public static void main(String[] args) {
+		Integer one = 0;
+		int two = 0;
+		
+		Double d1 = 0.0;
+		String str = d1.toString();
+	}
+}
+
+```
 
 [Voltar ao Índice](#indice)
 

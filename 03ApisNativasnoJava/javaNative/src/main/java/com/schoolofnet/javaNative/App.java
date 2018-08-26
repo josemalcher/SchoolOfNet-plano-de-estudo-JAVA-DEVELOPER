@@ -13,11 +13,18 @@ public class App {
 		//New ProtectedCode();
 		//new DefaultCode();
 		
-		Object obj = new Object();
-		PublicCode pub = new PublicCode();
+//		Object obj = new Object();
+//		PublicCode pub = new PublicCode();
+//		
+//		System.out.println(obj.toString());
+//		System.out.println(pub.toString());
 		
-		System.out.println(obj.toString());
-		System.out.println(pub.toString());
+		Integer one = 0;
+		int two = 0;
+		
+		Double d1 = 0.0;
+		String str = d1.toString();
+		
 
 	}
 }
