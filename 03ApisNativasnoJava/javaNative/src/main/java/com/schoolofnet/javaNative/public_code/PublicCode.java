@@ -8,5 +8,10 @@ public class PublicCode {
 	public void publicoMetodo() {
 		System.out.println("Método publicio");
 	}
+	
+	@Override
+	public String toString() {
+		return "Public_code class to String";
+	}
 
 }
