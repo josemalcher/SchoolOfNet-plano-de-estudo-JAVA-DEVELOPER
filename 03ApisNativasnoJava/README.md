@@ -152,6 +152,60 @@ public class PrivateCode {
 ---
 ## <a name="parte6">Modificadores de acesso protected e default</a>
 
+```java
+package com.schoolofnet.javaNative.protected_code;
+
+public class ProtectedCode {
+
+	protected String varProtected = "var Protected";
+	
+	public ProtectedCode() {
+		System.out.println("Protected Construtor");
+	}
+	protected void protectMetodo() {
+		System.out.println("Método protected");
+	}
+
+}
+
+```
+
+```java
+package com.schoolofnet.javaNative.default_code;
+
+class DefaultCode {
+
+	Integer age;
+	
+	DefaultCode() {
+		this.age = 10;
+		System.out.println("Default age =" + this.age );
+	}
+
+}
+
+```
+
+```java
+package com.schoolofnet.javaNative;
+
+//import com.schoolofnet.javaNative.default_code.DefaultCode;
+import com.schoolofnet.javaNative.private_code.PrivateCode;
+import com.schoolofnet.javaNative.protected_code.ProtectedCode;
+import com.schoolofnet.javaNative.public_code.PublicCode;
+
+public class App {
+	public static void main(String[] args) {
+
+		new PublicCode();
+		new PrivateCode();
+		
+		new ProtectedCode();
+		//new DefaultCode();
+	}
+}
+
+```
 
 
 [Voltar ao Índice](#indice)
