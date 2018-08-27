@@ -1,7 +1,13 @@
 package com.schoolofnet.javaNative;
 
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
+import java.io.DataInputStream;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.IOException;
 //import java.io.IOException;
 
 //import com.schoolofnet.javaNative.default_code.DefaultCode;
@@ -13,71 +19,95 @@ import java.io.FileOutputStream;
 public class App {
 	public static void main(String[] args) {
 
-		//new PublicCode();
-		//new PrivateCode();
-		//New ProtectedCode();
-		//new DefaultCode();
-		
-//		Object obj = new Object();
-//		PublicCode pub = new PublicCode();
-//		
-//		System.out.println(obj.toString());
-//		System.out.println(pub.toString());
-		
-		/*Integer one = 0;
-		int two = 0;
-		
-		Double d1 = 0.0;
-		String str = d1.toString();
-		*/
+		// new PublicCode();
+		// new PrivateCode();
+		// New ProtectedCode();
+		// new DefaultCode();
+
+		// Object obj = new Object();
+		// PublicCode pub = new PublicCode();
+		//
+		// System.out.println(obj.toString());
+		// System.out.println(pub.toString());
+
 		/*
-		Class<PublicCode> obj = PublicCode.class;
-		if(obj.isAnnotationPresent(Info.class)) {
-			Info annotation = obj.getAnnotation(Info.class);
-			Info info = (Info) annotation;
-			System.out.println(info.createBy());
-		}
-		*/
+		 * Integer one = 0; int two = 0;
+		 * 
+		 * Double d1 = 0.0; String str = d1.toString();
+		 */
 		/*
-		try {
-			File arquvio = new File("teste.txt");
-			if(arquvio.createNewFile()) {
-				System.out.println("Arquivo Criado");
-			}else {
-				System.out.println("Arquivo já existe!");
-			}
-		}
-		catch (IOException e) {
-			e.printStackTrace();
-		}
-		*/
-		
+		 * Class<PublicCode> obj = PublicCode.class;
+		 * if(obj.isAnnotationPresent(Info.class)) { Info annotation =
+		 * obj.getAnnotation(Info.class); Info info = (Info) annotation;
+		 * System.out.println(info.createBy()); }
+		 */
+		/*
+		 * try { File arquvio = new File("teste.txt"); if(arquvio.createNewFile()) {
+		 * System.out.println("Arquivo Criado"); }else {
+		 * System.out.println("Arquivo já existe!"); } } catch (IOException e) {
+		 * e.printStackTrace(); }
+		 */
+
 		File file;
 		FileOutputStream fop = null;
+		
+		BufferedReader br = null;
+		FileInputStream fis = null;
+		BufferedInputStream bis = null;
+
 		try {
 			file = new File("Teste.txt");
-			if(file.createNewFile()) {
+			if (file.createNewFile()) {
 				System.out.println("Arquivo Criado");
-			}else {
+			} else {
 				System.out.println("Arquivo já existe");
 			}
 			fop = new FileOutputStream(file);
-			
-			if(!file.exists()) {
+
+			if (!file.exists()) {
 				file.createNewFile();
 			}
-			
+
 			String text = "Olá, Meu nome é José Stélio Malcher Jr. ";
-			
+
 			byte[] textBytes = text.getBytes();
 
 			fop.write(textBytes);
 			fop.flush();
 			fop.close();
-					
-		}catch (Exception e) {
+
+			System.out.println("FEITO!");
+			
+			// Leitura do arquivo
+			System.out.println("Preparando para Ler");
+			
+			fis = new FileInputStream(file);
+			bis = new BufferedInputStream(fis);
+			DataInputStream dis = new DataInputStream(bis);
+			
+			while(dis.available() != 0) {
+				System.out.println(dis.readLine());
+			}
+			fis.close();
+			bis.close();
+			dis.close();
+			
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
+
+		/*try {
+			String currentLine;
+			br = new BufferedReader(new FileReader("Teste.txt"));
+			while ((currentLine = br.readLine()) != null) {
+				System.out.println(currentLine);
+			}
+			if (br != null) {
+				br.close();
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}*/
+
 	}
 }
-
