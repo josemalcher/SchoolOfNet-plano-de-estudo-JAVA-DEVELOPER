@@ -365,14 +365,71 @@ public class App {
 ---
 ## <a name="parte10">Java IO - File</a>
 
+```java
+package com.schoolofnet.javaNative;
 
+import java.io.File;
+import java.io.IOException;
+public class App {
+	public static void main(String[] args) {
+		try {
+			File arquvio = new File("teste.txt");
+			if(arquvio.createNewFile()) {
+				System.out.println("Arquivo Criado");
+			}else {
+				System.out.println("Arquivo já existe!");
+			}
+		}
+		catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+	}
+}
+
+```
 
 [Voltar ao Índice](#indice)
 
 ---
 ## <a name="parte11">Java IO - FileOuputStream</a>
 
+```java
+package com.schoolofnet.javaNative;
 
+import java.io.File;
+import java.io.FileOutputStream;
+
+public class App {
+	public static void main(String[] args) {
+
+		File file;
+		FileOutputStream fop = null;
+		try {
+			file = new File("Teste.txt");
+			if(file.createNewFile()) {
+				System.out.println("Arquivo Criado");
+			}else {
+				System.out.println("Arquivo já existe");
+			}
+			fop = new FileOutputStream(file);
+			if(!file.exists()) {
+				file.createNewFile();
+			}
+			String text = "Olá, Meu nome é José Stélio Malcher Jr. ";
+			byte[] textBytes = text.getBytes();
+			fop.write(textBytes);
+			fop.flush();
+			fop.close();
+					
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}
+
+
+```
 
 [Voltar ao Índice](#indice)
 
