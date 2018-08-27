@@ -523,7 +523,22 @@ public class App {
 ---
 ## <a name="parte13">Collections - ArrayList</a>
 
+```java
+package com.schoolofnet.javaNative;
 
+import java.util.ArrayList;
+import java.util.List;
+
+public class App {
+	public static void main(String[] args) {
+		List<String> list = new ArrayList<String>();
+		list.add(0,"Jose");
+		list.add(1,"Malcher");
+		list.add(2,"Jr.");
+    }
+}
+
+```
 
 [Voltar ao Índice](#indice)
 

@@ -1,6 +1,9 @@
 package com.schoolofnet.javaNative;
 
-import java.io.BufferedInputStream;
+import java.util.ArrayList;
+import java.util.List;
+
+/*import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.DataInputStream;
 import java.io.File;
@@ -8,8 +11,8 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;*/
 //import java.io.IOException;
-
 //import com.schoolofnet.javaNative.default_code.DefaultCode;
 //import com.schoolofnet.javaNative.private_code.PrivateCode;
 //import com.schoolofnet.javaNative.protected_code.ProtectedCode
@@ -47,7 +50,7 @@ public class App {
 		 * System.out.println("Arquivo já existe!"); } } catch (IOException e) {
 		 * e.printStackTrace(); }
 		 */
-
+/*
 		File file;
 		FileOutputStream fop = null;
 		
@@ -95,7 +98,7 @@ public class App {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
+*/
 		/*try {
 			String currentLine;
 			br = new BufferedReader(new FileReader("Teste.txt"));
@@ -109,5 +112,10 @@ public class App {
 			e.printStackTrace();
 		}*/
 
+		List<String> list = new ArrayList<String>();
+		list.add(0,"Jose");
+		list.add(1,"Malcher");
+		list.add(2,"Jr.");
+		
 	}
 }
