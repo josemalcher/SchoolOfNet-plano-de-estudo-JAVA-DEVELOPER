@@ -1,7 +1,9 @@
 package com.schoolofnet.javaNative;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /*import java.io.BufferedInputStream;
 import java.io.BufferedReader;
@@ -112,10 +114,18 @@ public class App {
 			e.printStackTrace();
 		}*/
 
-		List<String> list = new ArrayList<String>();
+		/*List<String> list = new ArrayList<String>();
 		list.add(0,"Jose");
 		list.add(1,"Malcher");
 		list.add(2,"Jr.");
+		*/
+		
+		Map<Integer, String> map = new HashMap<Integer, String>();
+		map.put(0, "José");
+		map.put(1, "malcher");
+		map.put(2, "Jr.");
+		System.out.println(map.toString());
+		System.out.println(map.values());
 		
 	}
 }

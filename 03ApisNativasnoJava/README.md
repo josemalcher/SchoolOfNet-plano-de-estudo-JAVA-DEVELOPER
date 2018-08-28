@@ -546,6 +546,26 @@ public class App {
 ## <a name="parte14">Collections - HashMap</a>
 
 
+```java
+package com.schoolofnet.javaNative;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+public class App {
+	public static void main(String[] args) {
+		
+		Map<Integer, String> map = new HashMap<Integer, String>();
+		map.put(0, "José");
+		map.put(1, "malcher");
+		map.put(2, "Jr.");
+		System.out.println(map.toString());
+		System.out.println(map.values());
+		
+	}
+}
+
+```
 
 [Voltar ao Índice](#indice)
 
