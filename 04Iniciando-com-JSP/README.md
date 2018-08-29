@@ -33,16 +33,30 @@ Java Server Pages é a forma basica e mais simples que o Java interage com a web
 ## <a name="parte1">Introdução</a>
 
 
+
 [Voltar ao Índice](#indice)
 
 ---
 ## <a name="parte2">Nosso ambiente</a>
+
+- https://www.oracle.com/technetwork/java/javase/downloads/index.html
+- https://maven.apache.org/download.cgi
+
+
 
 [Voltar ao Índice](#indice)
 
 
 ---
 ## <a name="parte3">Servlet</a>
+
+Servlets são classes Java, desenvolvidas de acordo com uma estrutura bem definida que quando instaladas e configuradas em um Servidor que implemente um Servlet Container, podem tratar requisições recebidas de clientes Web, como por exemplo os Browsers (Internet Explorer® e Mozilla Firefox®).
+
+Ao receber uma requisição, um Servlet pode capturar os parâmetros desta requisição, efetuar qualquer processamento inerente a uma classe Java, e devolver uma página HTML. - Retirado do Devmedia.
+
+- https://www.caelum.com.br/apostila-java-web/servlets/#5-2-servlets
+
+
 
 [Voltar ao Índice](#indice)
 
