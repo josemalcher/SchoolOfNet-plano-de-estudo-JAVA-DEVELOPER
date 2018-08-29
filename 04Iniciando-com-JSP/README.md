@@ -133,6 +133,12 @@ public class Hello extends HttpServlet {
 ---
 ## <a name="parte6">O que é Webcontainer / Tomcat</a>
 
+O servidor Apache Tomcat é um container Web de código fonte aberto baseado em Java que foi criado para executar aplicações Web que utilizam tecnologias Servlets e JSPs. O servidor Tomcat foi criado inicialmente como um subprojeto da Apache-Jakarta, no entanto, devido a sua alta popularidade, acabou sendo designado para um projeto separado da Apache, sendo assim mantido por um grupo de voluntários da comunidade de código aberto do Java.Apache Tomcat é um servidor bastante estável com todas as características que um container comercial de aplicações web possui.Atualmente as versões que ainda recebem suporte são 5.5x, 6.0x e 7.0x. Versões anteriores a 5.5 ainda encontram-se disponíveis para download no site da Apache, porém estão arquivadas e não possuem mais suporte. Por isso, recomenda-se que os usuários adquiram as últimas versões disponíveis.
+
+https://www.devmedia.com.br/introduzindo-o-servidor-de-aplicacao-apache-tomcat/27939
+
+
+
 [Voltar ao Índice](#indice)
 
 
