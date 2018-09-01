@@ -151,6 +151,48 @@ https://www.devmedia.com.br/introduzindo-o-servidor-de-aplicacao-apache-tomcat/2
 ---
 ## <a name="parte8">Request</a>
 
+- http://localhost:8080/SON-JSP/Hello?name=jose&lastname=malcher
+  
+```java
+protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		PrintWriter out = response.getWriter();
+		
+		String name = request.getParameter("name");
+		String lastName = request.getParameter("lastname");
+		
+		out.println("Olá " + name + " "+ lastName);
+		//response.getWriter().append("Served at: ").append(request.getContextPath());
+	}
+```
+
+
+
+```java
+protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+//		String body = request.getReader().lines().reduce("", (acc,actual)->acc+actual);
+//		System.out.println(body);
+		
+		JSONObject json = formatJson(request.getReader());
+		System.out.println(json.toString());
+		System.out.println(json.get("lastName"));
+	}
+	private JSONObject formatJson(BufferedReader reader) {
+		StringBuffer bs = new StringBuffer();
+		String line = null;
+		
+		try {
+			while((line = reader.readLine()) != null) {
+				bs.append(line);
+			}
+		}catch (Exception e) {
+			e.getStackTrace();
+		}
+		JSONObject json = new JSONObject(bs.toString());
+		return json;
+	}
+```
+
 [Voltar ao Índice](#indice)
 
 
