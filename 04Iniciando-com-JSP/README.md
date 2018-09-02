@@ -199,6 +199,45 @@ protected void doPost(HttpServletRequest request, HttpServletResponse response) 
 ---
 ## <a name="parte9">Response</a>
 
+```
+protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	JSONObject json = new JSONObject();
+		int i = 10;
+		for(int a = 0 ; a < i; a++) {
+			json.put("count", a);
+		}
+		json.put("teste", 50);
+		
+		response.setContentType("application/json");
+		response.getWriter().write(json.toString());
+	}
+```
+
+```java
+protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setAttribute("name","José Malcher JR");
+		RequestDispatcher view = request.getRequestDispatcher("/WEB-INF/index.jsp");
+		view.forward(request, response);
+		
+	}
+```
+
+```jsp
+ <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>OK!</h1>
+<p> Olá ${name} </p>
+</body>
+</html>
+```
+
 [Voltar ao Índice](#indice)
 
 
