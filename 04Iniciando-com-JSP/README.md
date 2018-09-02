@@ -338,6 +338,10 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response) t
 ---
 ## <a name="parte13">Entendendo o ciclo de vida</a>
 
+- https://www.devmedia.com.br/ciclo-da-vida-do-servlet/27919
+
+
+
 [Voltar ao Índice](#indice)
 
 
