@@ -3,6 +3,8 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -41,7 +43,16 @@ public class Hello extends HttpServlet {
 //		out.println("Olá " + name + " "+ lastName);
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 		
+		List<Integer> numbers = new ArrayList<Integer>();
+		numbers.add(1);
+		numbers.add(2);
+		numbers.add(3);
+		numbers.add(4);
+		
 		request.setAttribute("name","José Malcher JR");
+		request.setAttribute("numbers", numbers);
+		request.setAttribute("age", 18);
+		
 		RequestDispatcher view = request.getRequestDispatcher("/WEB-INF/index.jsp");
 		view.forward(request, response);
 		
