@@ -244,6 +244,26 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response) t
 ---
 ## <a name="parte10">Filtros</a>
 
+```java
+@WebFilter("/*")
+public class MyFilter implements Filter {
+```
+
+```java
+public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
+		Long initTime = System.currentTimeMillis();
+		
+		String endPoint = ((HttpServletRequest) request).getRequestURI();
+		
+		chain.doFilter(request, response);
+		
+		Long endTime = System.currentTimeMillis();
+		Long result = endTime - initTime;
+		
+		System.out.println(String.format("%d", TimeUnit.MICROSECONDS.toSeconds(result)));
+	}
+```
+
 [Voltar ao Índice](#indice)
 
 
