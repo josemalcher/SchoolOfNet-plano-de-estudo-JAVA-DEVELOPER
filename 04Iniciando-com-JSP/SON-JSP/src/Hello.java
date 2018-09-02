@@ -43,7 +43,7 @@ public class Hello extends HttpServlet {
 //		out.println("Olá " + name + " "+ lastName);
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 		
-		List<Integer> numbers = new ArrayList<Integer>();
+		/*List<Integer> numbers = new ArrayList<Integer>();
 		numbers.add(1);
 		numbers.add(2);
 		numbers.add(3);
@@ -55,7 +55,8 @@ public class Hello extends HttpServlet {
 		
 		RequestDispatcher view = request.getRequestDispatcher("/WEB-INF/index.jsp");
 		view.forward(request, response);
-		
+		*/
+		response.sendError(404, "Página não encontrada");
 	}
 
 	/**

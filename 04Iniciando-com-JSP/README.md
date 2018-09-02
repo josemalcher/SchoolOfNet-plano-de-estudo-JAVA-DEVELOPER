@@ -326,6 +326,12 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response) t
 ---
 ## <a name="parte12">Lidando com Erros</a>
 
+```java
+protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	response.sendError(404, "Página não encontrada");
+}
+```
+
 [Voltar ao Índice](#indice)
 
 
