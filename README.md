@@ -5,9 +5,9 @@
 [0 - JAVA SE](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-JAVA-DEVELOPER/tree/master/01JAVASE)  | :ok_hand:         
 [1 - Orientação a Objetos com Java](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-JAVA-DEVELOPER/tree/master/02OrientacaoObjetoscomJava)  | :ok_hand:             
 [2 - Api's Nativas no Java](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-JAVA-DEVELOPER/tree/master/03ApisNativasnoJava)   | :ok_hand:         
-[3 - Iniciando com JSP](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-JAVA-DEVELOPER/tree/master/04Iniciando-com-JSP)             | :eyes:   |     
+[3 - Iniciando com JSP](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-JAVA-DEVELOPER/tree/master/04Iniciando-com-JSP)   | :ok_hand:         
 4 - Java 8   
-5 - Java com JDBC  
+5 - Java com JDBC               | :eyes:   |     
 6 - Iniciando com Spark Java Framework  
 7 - Jersey Java 
 8 - Java com MongoDB  
