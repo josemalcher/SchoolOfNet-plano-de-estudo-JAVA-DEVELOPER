@@ -48,6 +48,18 @@ Mais Leitura sobre:
 
 ## <a name="parte3">Criando e configurando nosso projeto</a>
 
+-https://mvnrepository.com/artifact/mysql/mysql-connector-java/6.0.6
+
+- /Java_jdbc/pom.xml
+```
+<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>6.0.6</version>
+</dependency>
+```
+
 
 [Voltar ao Índice](#indice)
 
