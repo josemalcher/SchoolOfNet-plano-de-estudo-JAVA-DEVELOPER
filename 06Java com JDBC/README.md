@@ -120,6 +120,17 @@ public class App
 
 ## <a name="parte5">Tipos de drivers</a>
 
+JDBC tipo 1: foi o primeiro tipo a ser criado, não faz uma conexão real com o banco de dados, mas sim uma conexão com ODBC. Não é muito utilizado hoje em dia por ser escrito em linguagem nativa, o que sacrifica a portabilidade e exige configuração extra no cliente. Ele é composto pelas classes do pacote sun.jdbc.odbc e uma biblioteca de código nativo (não é necessário acessá-la diretamente). Não utilize esse tipo de driver caso tenha outra opção.
+
+JDBC tipo 2: esse tipo de driver eliminou a dependência de ODBC, mas ainda é escrito em linguagem nativa, esse código nativo permite fazer chamadas a uma API cliente do SGBD. Também é necessária a instalação de bibliotecas de código nativo na máquina onde o sistema será executado, assim como o tipo 1. Esse tipo de driver também não é portável.
+
+JDBC tipo 3: totalmente escrito em Java, eliminou a necessidade de bibliotecas de código nativo favorecendo a portabilidade. Esse tipo de driver permite a conversão de chamadas JDBC em chamadas a um protocolo de rede genérico que então pode ser convertido a chamadas à API específica do SGBD.
+
+JDBC tipo 4: também totalmente escrito em Java, utiliza o protocolo de rede proprietário do SGBD, convertendo as chamadas JDBC para chamadas diretas ao SGBD dispensando uma API cliente intermediaria.
+
+FONTE: https://www.devmedia.com.br/jdbc-tutorial/6638
+
+
 
 [Voltar ao Índice](#indice)
 
