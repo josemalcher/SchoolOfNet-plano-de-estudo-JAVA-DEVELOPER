@@ -25,12 +25,21 @@ https://www.schoolofnet.com/curso/java/java-e-banco-de-dados/java-com-jdbc-rev2/
 
 ## <a name="parte1">Introdução</a>
 
+- JDK 8
+- MySQL
 
 [Voltar ao Índice](#indice)
 
 ---
 
 ## <a name="parte2">JDBC</a>
+
+Java Database Connectivity ou JDBC especifica uma série de funcionalidades básicas que são implementadas pelos Drivers especificamente para cada base de dados.
+
+![Diagrama JDBC](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-JAVA-DEVELOPER/blob/master/06Java%20com%20JDBC/readme-img/jdbc.png?raw=true)
+
+Mais Leitura sobre: 
+- https://www.devmedia.com.br/aprendendo-java-com-jdbc/29116
 
 
 [Voltar ao Índice](#indice)
