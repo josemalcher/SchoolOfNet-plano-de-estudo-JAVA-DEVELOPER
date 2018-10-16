@@ -332,6 +332,77 @@ public class ConnectionFactory {
 
 ## <a name="parte10">Trabalhando com DAO</a>
 
+A maioria dos bancos de dados relacionais lida com uma consulta (query) JDBC / SQL em quatro passos:
+
+1- Interpretar (parse) a consulta SQL;  
+2- Compilar a consulta SQL;  
+3- Planejar e otimizar o caminho de busca dos dados;  
+4- Executar a consulta otimizada, buscando e retornando os dados.  
+
+Um Statement irá sempre passar pelos quatro passos acima para cada consulta SQL enviada para o banco.
+
+Já um Prepared Statement pré-executa os passos (1) a (3). Então, ao criar um Prepared Statement alguma pré-otimização é feita de imediato. O efeito disso é que, se você pretende executar a mesma consulta repetidas vezes mudando apenas os parâmetros de cada uma, a execução usando Prepared Statements será mais rápida e com menos carga sobre o banco.
+
+Outra vantagem dos Prepared Statements é que, se utilizados corretamente, ajudam a evitar ataques de Injeção de SQL. Note que para isso é preciso que os parâmetros da consulta sejam atribuídos através dos métodos setInt(), setString(), etc. presentes na interface PreparedStatement e não por concatenação de strings.
+
+Para uma consulta que vai ser executada poucas vezes e não requer nenhum parâmetro, Statement basta. Para os demais casos, prefira PreparedStatement.
+
+(Baseado nesta resposta em inglês e em https://en.wikipedia.org/wiki/Prepared_statement).
+
+FONTE: https://pt.stackoverflow.com/a/99636/2167
+
+```java
+package schoolofnet.Java_jdbc;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+public class MovieDao {
+
+	private Connection connection = null;
+	private PreparedStatement prestatement= null;
+	
+	public MovieDao() {
+		connection = new ConnectionFactory().getConnection();
+	}
+	
+	public List<Movie> findAll() throws SQLException{
+		
+		String sql = "SELECT * from movie";
+		List<Movie> movies = new ArrayList<Movie>();
+		
+		prestatement = connection.prepareStatement(sql);
+		
+		ResultSet res = prestatement.executeQuery();
+		
+		while(res.next()) {
+			movies.add(new Movie(res.getInt("id"), res.getString("nome")));
+		}
+		
+		return movies;
+		
+	}
+	
+	public void insert(Movie movie) {
+		
+	}
+	
+	public void update(Movie movieOld, Movie MovieNew) {
+		
+	}
+	
+	public void remove(Movie movie) {
+		
+	}
+}
+
+```
+
+
 
 [Voltar ao Índice](#indice)
 
