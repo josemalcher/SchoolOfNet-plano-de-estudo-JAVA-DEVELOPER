@@ -3,6 +3,8 @@ package schoolofnet.Java_jdbc;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.sql.Statement;
+
 
 /**
  * Hello world!
@@ -10,7 +12,7 @@ import java.sql.SQLException;
  */
 public class App 
 {
-    public static void main( String[] args )
+    public static void main( String[] args ) throws SQLException
     {
         
     	try {
@@ -31,11 +33,17 @@ public class App
 			e.printStackTrace();
 		}
     	
-    	if(connection != null) {
-    		System.out.println("CONECTOU!!");
-    	}else {
-    		System.out.println("FALHA NA CONEXÃO!");
+    	if(connection == null) {
+    		System.out.println("FALHOU!!");
+    		return;
     	}
+    	
+    	Statement statement = connection.createStatement();
+    	
+    	//String sql = "CREATE TABLE IF NOT EXISTS movie (id INTEGER NOT NULL AUTO_INCREMENT, name VARCHAR(255) NOT NULL, PRIMARY KEY (id))";
+    	String sql = "DROP TABLE movie";
+
+    	statement.executeUpdate(sql);
     	
     }
 }
