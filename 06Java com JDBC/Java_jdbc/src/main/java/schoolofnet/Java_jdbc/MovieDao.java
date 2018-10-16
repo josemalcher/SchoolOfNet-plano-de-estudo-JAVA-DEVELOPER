@@ -34,7 +34,7 @@ public class MovieDao {
 	}
 	
 	public void insert(Movie movie) throws SQLException {
-		String sql = "INSERT INTO movie (name) VALUES (?)";
+		String sql = "INSERT INTO movie (nome) VALUES (?)";
 		
 		prestatement = connection.prepareStatement(sql);
 		prestatement.setString(1, movie.getNome());
@@ -42,7 +42,7 @@ public class MovieDao {
 	}
 	
 	public void update(Movie movieOld, Movie MovieNew) throws SQLException {
-		String sql = "UPDATE movie SET name = ? WHERE id = ?";
+		String sql = "UPDATE movie SET nome = ? WHERE id = ?";
 		
 		prestatement = connection.prepareStatement(sql);
 		prestatement.setString(1, MovieNew.getNome());
@@ -57,4 +57,23 @@ public class MovieDao {
 		prestatement.setInt(1, movie.getId());
 		prestatement.execute();
 	}
+	
+	public Movie findById(Integer id) throws SQLException {
+		String sql = "SELECT * FROM movie WHERE id = ?";
+		
+		prestatement = connection.prepareStatement(sql);
+		prestatement.setInt(1, id);
+		
+		ResultSet res = prestatement.executeQuery();
+		
+		Movie movie = null;
+		
+		while (res.next()) {
+			movie = new Movie(res.getInt("id"), res.getString("nome"));
+		}
+		
+		return movie;
+	}
+	
+	
 }
