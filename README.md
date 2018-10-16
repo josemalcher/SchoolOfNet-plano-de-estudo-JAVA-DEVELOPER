@@ -7,11 +7,11 @@
 [3 - Api's Nativas no Java](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-JAVA-DEVELOPER/tree/master/03ApisNativasnoJava)   | :ok_hand:         
 [4 - Iniciando com JSP](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-JAVA-DEVELOPER/tree/master/04Iniciando-com-JSP)   | :ok_hand:         
 5 - Java 8   
-[6 - Java com JDBC](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-JAVA-DEVELOPER/tree/master/06Java%20com%20JDBC)               | :eyes:   |     
+[6 - Java com JDBC](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-JAVA-DEVELOPER/tree/master/06Java%20com%20JDBC)   | :ok_hand:         
 7 - Iniciando com Spark Java Framework  
 8 - Jersey Java 
 9 - Java com MongoDB  
-10 - Hibernate  
+[10 - Hibernate](https://github.com/josemalcher/SchoolOfNet-plano-de-estudo-JAVA-DEVELOPER/tree/master/10Hibernate)                 | :eyes:   |     
 11 - Java CDI  
 12 - Play Framework  
 13 - jUnit Java 
