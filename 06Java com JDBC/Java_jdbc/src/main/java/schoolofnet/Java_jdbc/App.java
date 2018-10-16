@@ -1,5 +1,6 @@
 package schoolofnet.Java_jdbc;
 
+import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.Scanner;
 
@@ -24,6 +25,7 @@ public class App
         int choice = scanner.nextInt();
         switch (choice) {
 		case 1:
+			Connection con = new ConnectionFactory().getConnection();
 			System.out.println("Inserindo");
 			break;
 
