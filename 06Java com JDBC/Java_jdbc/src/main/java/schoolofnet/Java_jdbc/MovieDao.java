@@ -33,15 +33,28 @@ public class MovieDao {
 		
 	}
 	
-	public void insert(Movie movie) {
+	public void insert(Movie movie) throws SQLException {
+		String sql = "INSERT INTO movie (name) VALUES (?)";
 		
+		prestatement = connection.prepareStatement(sql);
+		prestatement.setString(1, movie.getNome());
+		prestatement.execute();
 	}
 	
-	public void update(Movie movieOld, Movie MovieNew) {
+	public void update(Movie movieOld, Movie MovieNew) throws SQLException {
+		String sql = "UPDATE movie SET name = ? WHERE id = ?";
 		
+		prestatement = connection.prepareStatement(sql);
+		prestatement.setString(1, MovieNew.getNome());
+		prestatement.setInt(2, movieOld.getId());
+		prestatement.execute();
 	}
 	
-	public void remove(Movie movie) {
+	public void remove(Movie movie) throws SQLException {
+		String sql = "DELETE FROM movie WHERE id = ?";
 		
+		prestatement = connection.prepareStatement(sql);
+		prestatement.setInt(1, movie.getId());
+		prestatement.execute();
 	}
 }
