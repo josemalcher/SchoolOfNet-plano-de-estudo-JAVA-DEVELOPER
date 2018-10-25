@@ -2,6 +2,7 @@
 
 
 Spark Java é um micro framework voltado para Java WEB. Ele utiliza recursos do Java 8 para a criação de aplicações com o mínimo de esforço possível. Você aprenderá como é possível criar uma pequena REST API utilizando o Spark e conhecerá mais sobre as principais features que ele nos traz.
+
 https://www.schoolofnet.com/curso/java/frameworks-java/iniciando-com-sparkjava-rev2/
 
 
@@ -32,13 +33,19 @@ https://www.schoolofnet.com/curso/java/frameworks-java/iniciando-com-sparkjava-r
 
 ## <a name="parte1">Introdução</a>
 
-
+- http://sparkjava.com/
 
 [Voltar ao Índice](#indice)
 
 ---
 
-## <a name="parte2"></a>
+## <a name="parte2">Preparando ambiente</a>
+
+- https://www.oracle.com/technetwork/java/javase/overview/index.html
+
+- Eclipse
+- https://gradle.org/install/
+- https://maven.apache.org/
 
 
 

@@ -36,20 +36,13 @@ https://www.schoolofnet.com/curso/java/linguagem-java/java-8/
 
 ## <a name="parte2">Preparando ambiente</a>
 
+- JDK
 
 [Voltar ao Índice](#indice)
 
 ---
 
-## <a name="parte3"></a>
-
-
-
-[Voltar ao Índice](#indice)
-
----
-
-## <a name="parte4"></a>
+## <a name="parte3">O que mudou?</a>
 
 
 
@@ -57,7 +50,7 @@ https://www.schoolofnet.com/curso/java/linguagem-java/java-8/
 
 ---
 
-## <a name="parte5"></a>
+## <a name="parte4">Programação funcional</a>
 
 
 
@@ -65,8 +58,40 @@ https://www.schoolofnet.com/curso/java/linguagem-java/java-8/
 
 ---
 
-## <a name="parte6"></a>
+## <a name="parte5">Criando nosso projeto</a>
 
+
+
+[Voltar ao Índice](#indice)
+
+---
+
+## <a name="parte6">Lambdas</a>
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class Main {
+    public static void main(String... args) {
+
+        List<String> strs = Arrays.asList("Jose", "Malcher", "Email", "Java");
+
+        /*for(String str : strs){
+            System.out.println(str);
+        }
+
+        System.out.println("---------Lambdas----------");
+        strs.forEach(str -> System.out.println(str));
+        */
+        List<String> result = strs.stream()
+                .filter(str -> str.startsWith("E"))
+                .collect(Collectors.toList());
+
+        result.forEach(System.out::println);
+
+    }
+}
 
 
 [Voltar ao Índice](#indice)
