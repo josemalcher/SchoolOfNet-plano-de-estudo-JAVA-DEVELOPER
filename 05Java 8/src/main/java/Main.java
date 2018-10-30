@@ -18,7 +18,8 @@ public class Main {
                 .filter(str -> str.startsWith("E"))
                 .collect(Collectors.toList());
 
-        result.forEach(System.out::println);
+        //result.forEach(System.out::println);
+        result.forEach(Person::say);
 
     }
 }
