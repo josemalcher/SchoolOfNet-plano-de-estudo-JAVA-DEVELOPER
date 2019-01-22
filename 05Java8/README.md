@@ -23,7 +23,6 @@ https://www.schoolofnet.com/curso/java/linguagem-java/java-8/
 - [Finalizando](#parte13)   
 
 
-
 ---
 
 ## <a name="parte1">Introdução</a>
@@ -68,30 +67,6 @@ https://www.schoolofnet.com/curso/java/linguagem-java/java-8/
 
 ## <a name="parte6">Lambdas</a>
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
-
-public class Main {
-    public static void main(String... args) {
-
-        List<String> strs = Arrays.asList("Jose", "Malcher", "Email", "Java");
-
-        /*for(String str : strs){
-            System.out.println(str);
-        }
-
-        System.out.println("---------Lambdas----------");
-        strs.forEach(str -> System.out.println(str));
-        */
-        List<String> result = strs.stream()
-                .filter(str -> str.startsWith("E"))
-                .collect(Collectors.toList());
-
-        result.forEach(System.out::println);
-
-    }
-}
 
 
 [Voltar ao Índice](#indice)
@@ -100,47 +75,6 @@ public class Main {
 
 ## <a name="parte7">Method references</a>
 
-```java
-public class Person {
-    public static void say(String s){
-        System.out.println("A new person is saying something..." + s);
-    }
-}
-
-```
-
-```java
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
-
-public class Main {
-    public static void main(String... args) {
-
-        List<String> strs = Arrays.asList("Jose", "Malcher", "Email", "Java");
-
-        /*for(String str : strs){
-            System.out.println(str);
-        }
-
-        System.out.println("---------Lambdas----------");
-        strs.forEach(str -> System.out.println(str));
-        */
-        List<String> result = strs.stream()
-                .filter(str -> str.startsWith("E"))
-                .collect(Collectors.toList());
-
-        //result.forEach(System.out::println);
-        result.forEach(Person::say);
-
-    }
-}
-
-```
-
-```
-A new person is saying something...Email
-```
 
 [Voltar ao Índice](#indice)
 
