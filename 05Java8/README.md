@@ -52,6 +52,9 @@ https://www.schoolofnet.com/curso/java/linguagem-java/java-8/
 ## <a name="parte4">Programação funcional</a>
 
 
+- https://pt.wikipedia.org/wiki/Programa%C3%A7%C3%A3o_funcional
+- https://medium.com/trainingcenter/programa%C3%A7%C3%A3o-funcional-para-iniciantes-9e2beddb5b43
+
 
 [Voltar ao Índice](#indice)
 
@@ -59,7 +62,17 @@ https://www.schoolofnet.com/curso/java/linguagem-java/java-8/
 
 ## <a name="parte5">Criando nosso projeto</a>
 
+```java
 
+public class Main {
+    public static void main(String... args) {
+
+        System.out.println("Hello school of net - java 8");
+
+    }
+}
+
+```
 
 [Voltar ao Índice](#indice)
 
